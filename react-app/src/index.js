@@ -2,6 +2,7 @@ import React from "react";
 import ReactDom from "react-dom/client";
 import { Greeting, UserCard } from "./Greeting";
 import Product, { NavBar } from "./Product";
+import {Button} from "./Button";
 
 const root = ReactDom.createRoot(document.getElementById("root"));
 
@@ -40,10 +41,14 @@ function Greeting2() {
 root.render(
   //puedo poner <div></div> o <></> (contenedor de contenido vacio)
   <>
-    <Greeting title="Hola mundo" name="Jaime" />
+    <Button text = 'Click'/>
+    <Button text = 'Holi'/>
+    <Button text = 'Snap' name = 'Jaime'/>
+    {/* <Greeting title="Hola mundo" name="Jaime" />
     <Greeting title="Hola react" name="Andrés" />
     <Greeting title="Hola Jaime" />
     <Greeting title="Hola gordo" />
+
     <UserCard
       name="Jaime Andrés"
       amount={3000}
@@ -54,6 +59,16 @@ root.render(
         alert("Hello");
       }}
     />
+
+     <UserCard
+      name="María Salomé"
+      amount={2500}
+      married={true}
+      points={[99, 33.3, 25.2]}
+      addres={{ street: "cra 20A 6-93", city: "Cali" }}
+      greet={function () {
+        alert("Hello");
+      }} /> */}
   </>
 
   //<Greeting n="bye"/>

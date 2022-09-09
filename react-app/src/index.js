@@ -11,10 +11,12 @@ const root = ReactDom.createRoot(document.getElementById("root"));
 function Counter() {
   //const [counter, setCounter] = useState(0)}
   const [mensaje, setMensaje] = useState('')
+  const [counter, setCounter]  = useState(0)
 
   useEffect(() =>{
     console.log('render')
-  }, [])
+  }, [counter])
+
   return (
     <div>
       <input onChange={e => setMensaje(e.target.value)}/>
@@ -23,6 +25,13 @@ function Counter() {
       }}>
         Guardar
       </button>
+      <hr/>
+      <h1>Counter: {counter}</h1>
+      <button
+        onClick={() => {
+          setCounter(counter + 1);
+        }}
+      >Incrementar</button>
     </div>
     
 /*     <div>

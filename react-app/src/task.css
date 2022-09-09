@@ -1,0 +1,15 @@
+.card {
+    background-color: #202020;
+    color: aliceblue;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.bg-green {
+    background: green;
+}
+
+.bg-red {
+    background: red;
+}

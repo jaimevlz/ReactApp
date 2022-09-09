@@ -6,7 +6,9 @@ export function Button ({text, name = 'User'}){
     if(!text){
         console.error('Tipo String requerido')
     }else{
-    return <button>
+    return <button onClick = {function(){
+        console.log('Hola Mundo!')
+    }}>
         {text} - {name}
     </button>
     }
